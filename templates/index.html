@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistem Pakar Diagnosa Penyakit</title>
+</head>
+<body>
+  <h2>Form Diagnosa Gejala</h2>
+  <form method="POST">
+    <label><input type="checkbox" name="demam"> Demam</label><br>
+    <label><input type="checkbox" name="batuk"> Batuk</label><br>
+    <label><input type="checkbox" name="pilek"> Pilek</label><br>
+    <label><input type="checkbox" name="sakit_tenggorokan"> Sakit Tenggorokan</label><br><br>
+    <button type="submit">Diagnosa</button>
+  </form>
+
+  {% if diagnosis %}
+    <h3>Hasil: {{ diagnosis }}</h3>
+  {% endif %}
+</body>
+</html>
